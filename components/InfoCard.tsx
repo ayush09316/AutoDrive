@@ -9,7 +9,7 @@ interface InfoProp {
 
 const InfoCard = ({label,icon,info}:InfoProp) => {
   return (
-    <div className="bg-white flex flex-col sm:flex-row gap-8 justify-center items-center w-full min-w-[150px] py-3 px-2  border-2 rounded-3xl shadow-xl">
+    <div className="bg-white  flex flex-col sm:flex-row sm:gap-1 justify-center lg:gap-5 items-center w-full min-w-[150px]  py-3 px-2  border-2 rounded-3xl shadow-xl">
 
     <div className="flex flex-col  items-center sm:px-4 gap-1">
       <div className="flex justify-center items-center relative w-[108px] h-[108px] sm:w-[58px] sm:h-[58px] lg:w-[88px] lg:h-[88px] rounded-full border-2">
@@ -20,7 +20,7 @@ const InfoCard = ({label,icon,info}:InfoProp) => {
       <span className="text-sm font-medium ">{label}</span>
     </div>
   
-    <span className=" font-[600] border-2 rounded-2xl p-2 text-md">{info}</span>
+    <span className=" font-[600] border-2 rounded-2xl p-2 text-sm lg:text-md">{info}</span>
   
   </div>
   
